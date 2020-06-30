@@ -11,12 +11,12 @@
 * @since Accelerate Marketing 2.0
 */
 
-//Enque scripts and styles
-function accelerate_child_scripts() {
-  wp_enqueue_style('accelerate-style', get_template_directory_uri().'style.css');
-  wp_enque_style('child-style', get_stylesheet_directory_uri().'style.css', array('accelerate-style'));
-  add_action('wp_enque_scripts', 'accelerate_child_scripts');
+// Enqueue scripts and styles
+function accelerate_child_scripts(){
+	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
 }
+add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 // in add_action line, order is important. This is pulling parent scripts first, 
 // then pulling child scripts that we just defined. 
 
