@@ -20,3 +20,20 @@ add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 // in add_action line, order is important. This is pulling parent scripts first, 
 // then pulling child scripts that we just defined. 
 
+function create_custom_post_types() {
+	register_post_type('case_studies',
+		array(
+			'labels' => array(
+				'name' => __('Case Studies'),
+				'singular_name' => __('Case Study')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'case-studies'),
+		)
+		);
+}
+
+//Hook new custom post function:
+add_action('init', 'create_custom_post_types');
+
