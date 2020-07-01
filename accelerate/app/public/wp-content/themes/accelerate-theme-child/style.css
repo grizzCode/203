@@ -47,3 +47,26 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.case-study {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case-study-sidebar {
+ flex: 40%;
+ margin: 0px;
+ margin-right: 1em;
+
+}
+
+.case-study-images {
+  flex: 60%;
+}
+.site-content {
+  width: 80%;
+  max-width: 100%;
+
+  
+
+}

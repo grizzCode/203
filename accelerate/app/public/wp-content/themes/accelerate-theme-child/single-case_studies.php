@@ -14,6 +14,7 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); 
        //the following function comes with ACF - Advaced Custom Fields and takes an argument for the field title
       // (computer-readable version)
+        $size = "full";
         $services = get_field('services');
         $client = get_field('client');
         $link = get_field('site_link');
@@ -27,10 +28,19 @@ get_header(); ?>
           <h5><?php echo $services; ?></h5>
           <h6>Client: <?php echo $client; ?></h6>
           <?php the_content(); ?>
-          <p><a href="<?php echo $link; ?>">Site Link</a></p>
+          <p><strong><a href="<?php echo $link; ?>">Site Link</a></strong></p>
         </aside>
+
         <div class="case-study-images">
-          
+          <?php if($image1) { 
+            echo wp_get_attachment_image($image1, $size);
+          }
+          if($image2) {
+            echo wp_get_attachment_image($image2, $size);
+           }
+          if($image3) { 
+             echo wp_get_attachment_image($image3, $size);
+          } ?>
         </div>
       </article>
 
