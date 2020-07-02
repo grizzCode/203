@@ -75,3 +75,25 @@
   list-style-type: none;
 }
 
+.individual-featured-work {
+  margin: 25px;
+}
+
+/* .services-content {
+  display: flex;
+  margin: 2em;
+} */
+
+.service-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.service-text h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: grey;
+  margin: 0px;
+}
+.service-text p {
+  margin-top: 2.5em;
+}

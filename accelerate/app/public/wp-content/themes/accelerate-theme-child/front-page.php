@@ -22,7 +22,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
-	<section class="featured-work">
+	<section class="feawtured-work">
 		<div class="site-content">
 			<h4>Featured Work</h4>
 			<ul class="homepage-featured-work">
