@@ -63,6 +63,8 @@ define('NONCE_SALT',       'Fa+TczA+ReJEgtQy5a3Fbz9xilZuXwtwHAVua99fyEyc+zHGCAlk
  */
 $table_prefix = 'wp_';
 define('DISALLOW_FILE_EDIT', true);
+define('WP_HOME','http://accelerate.local');
+define('WP_SITEURL','http://accelerate.local');
 
 
 
