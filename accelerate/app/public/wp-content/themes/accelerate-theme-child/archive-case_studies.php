@@ -16,13 +16,16 @@ get_header(); ?>
       $image1 = get_field("image_1");
       $size = "full"; 
       ?>
+      <div class="service-wrapper">
         <div class="service-text">
           <h1><?php the_title(); ?></h1>
           <h6><?php echo get_field('services') ?></h6>
           <p><?php the_content(); ?></p>
+          <a href="<?php the_permalink() ?>"class="service-link">View Project ></a>
         </div>
-      <div class="service-image">
-        <img src="<?php echo wp_get_attachment_image($image1, $size) ?>" />
+        <div class="service-image">
+          <?php echo wp_get_attachment_image($image1, $size) ?>
+        </div>
       </div>
       <?php endwhile; ?>
     </div>
