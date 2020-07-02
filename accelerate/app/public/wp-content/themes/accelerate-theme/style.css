@@ -708,3 +708,122 @@ a.button, a.button:link {
 		display: inline;
 	}
 }
+
+.home-page {
+  background: url(img/taxi-photo.jpg) no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+.button {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+.blog-post {
+  width: 50%;
+  float: left;
+  margin-bottom: 2em;
+}
+
+.blog-post h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+}
+
+.blog-post h3 {
+  font-size: 1.5em;
+}
+
+.read-more-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+.case-study {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case-study-sidebar {
+ flex: 40%;
+ margin: 0px;
+ margin-right: 1em;
+
+}
+
+.case-study-images {
+  flex: 60%;
+}
+.site-content {
+  width: 80%;
+  max-width: 100%;
+
+}
+
+.homepage-featured-work {
+  display: flex;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+.individual-featured-work {
+  margin: 25px;
+}
+
+.services-content {
+  margin: 2em;
+}
+.service-wrapper {
+  display: flex;
+  margin-top: 4em;
+}
+
+.service-text {
+  width: 30%;
+  margin-left: 3em;
+  margin-right: 8em;
+ 
+}
+
+.service-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  font-weight: 300;
+  
+}
+.service-text h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: rgb(143, 143, 143);
+  margin: 0px;
+}
+.service-text p {
+  margin-top: 2.5em;
+  color: rgb(102, 102, 102);
+}
+
+.service-image img {
+  width: 700px;
+  height: auto;
+}
+
+.service-link {
+  font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+.social-media-navigation li {
+ list-style-type: none;
+ width: 30px;
+ height: auto;
+}
+
+
