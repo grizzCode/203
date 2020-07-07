@@ -1,1 +1,10 @@
 [02-Jul-2020 14:47:03 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /Users/ullr/Local Sites/accelerate/app/public/wp-config.php on line 72
+[06-Jul-2020 02:01:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_current_screen() in /Users/ullr/Local Sites/accelerate/app/public/wp-content/plugins/menu-icons/includes/picker.php:189
+Stack trace:
+#0 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/class-wp-hook.php(287): Menu_Icons_Picker::_save(2, 47356, Array)
+#1 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/nav-menu.php(589): do_action('wp_update_nav_m...', 2, 47356, Array)
+#4 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/nav-menu.php(1114): wp_update_nav_menu_item(2, 47356, Array)
+#5 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/class-wp-hook.php(287): _wp_auto_add_pages_to_menu('publish', 'draft', Object(WP_Post))
+#6 /Users/ullr/Local Sites/accelerate/app/public/wp-includes/class-wp-hook.php(311): WP_Hook-> in /Users/ullr/Local Sites/accelerate/app/public/wp-content/plugins/menu-icons/includes/picker.php on line 189
